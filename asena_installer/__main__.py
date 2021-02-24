@@ -1,4 +1,4 @@
-import heroku3
+ import heroku3
 from time import time
 import random
 import requests
@@ -12,6 +12,7 @@ from telethon.tl.functions.channels import EditPhotoRequest, CreateChannelReques
 from asyncio import get_event_loop
 from .language import LANG, COUNTRY, LANGUAGE, TZ
 from rich.prompt import Prompt, Confirm
+import base64
 
 LANG = LANG['MAIN']
 
@@ -85,22 +86,35 @@ if __name__ == "__main__":
     heroku = connect(api)
     basarili(LANG['LOGGED'])
 
-    # Telegram İşlemleri #
+    # Telegram #
     onemli(LANG['GETTING_STRING_SESSION'])
     stri, aid, ahash = main()
     basarili(LANG['SUCCESS_STRING'])
     baslangic = time()
 
-    # Heroku İşlemleri #
+    # Heroku #
     bilgi(LANG['CREATING_APP'])
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    # Noldu Öz Reponu yaza bilmədin? Haydi başqa qapıya
-    if os.path.isdir("./asenauserbot/"):
-        rm_r("./cyberusertbot/")
-    repo = eval(Sifrele(b'Z^}\xb2\x94\x0f(O\x98\'J+n\x81\xef\xebX\x19\xb2\xf5\x87\x8f\x9f\x839\x99\xcb\xa6>\xb6{\xe1C\xd9\x9b\xcb,x\x90- :\x80\x08\xd6\x14\x9d\x8a\xd2\x95\x0b\x17c\xbd.\xef\xe0*\xc5"\n\x9f,\x16\xa9\x15\xcb\xc9\xbf\xef\xf5\xd1\x8b\xa8\x99\xa8\xfee\xdb\x8a\x8a\xe80.\xc9\xcf\xcd\xdbN\x8a\xd7N', b'@AsenaUserBot').decode("utf-8"))
+    # CyberUserBot
+    SyperStringKey = "tobresurebyc/"
+    GiperStringKey = "edazhsadaddiraf/"
+    InvalidKey = "moc.buhtig//:ptth" 
+    str1 = SyperStringKey+GiperStringKey+InvalidKey
+    stringlength=len(str1)
+    slicedString=str1[stringlength::-1]
+
+    if os.path.isdir("./cyberuserbot/"):
+        rm_r("./cyberuserbot/")
+    repo = Repo.clone_from(slicedString,"./cyberuserbot/", branch="master")
+    basarili(LANG['DOWNLOADED'])
+    onemli(LANG['DEPLOYING'])
+    app = hgit(heroku, repo, appname)
+    config = app.config()
+
+
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
@@ -117,7 +131,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "@TheCyberUserBot"
+    config['DEFAULT_BIO'] = "@CyberUserBot"
     config['GALERI_SURE'] = "60"
     config['CHROME_DRIVER'] = "/usr/sbin/chromedriver"
     config['GOOGLE_CHROME_BIN'] = "/usr/sbin/chromium"
@@ -153,7 +167,7 @@ if __name__ == "__main__":
     if Sonra == True:
         BotLog = False
         Cevap = ""
-        while not Cevap == "4":
+        while not Cevap == "3":
             if Cevap == "1":
                 bilgi(LANG['OPENING_BOTLOG'])
 
@@ -163,17 +177,15 @@ if __name__ == "__main__":
 
                 basarili(LANG['OPENED_BOTLOG'])
                 BotLog = True
-            elif Cevap == "3":
+            elif Cevap == "2":
                 if BotLog:
                     config['LOGSPAMMER'] = "True"
                     basarili(LANG['SUCCESS_LOG'])
                 else:
                     hata(LANG['NEED_BOTLOG'])
-            elif Cevap == "2":
-                config['OTOMATIK_KATILMA'] = "False"
-                basarili(LANG['SUCCESS_SUP'])
+         
             
-            bilgi(f"\[1] {LANG['BOTLOG']}\n\[2] {LANG['NO_SUP']}\n\[3] {LANG['NO_LOG']}\n\[4] {LANG['CLOSE']}")
+            bilgi(f"\[1] {LANG['BOTLOG']}\n[2] {LANG['NO_LOG']}\n\[3] {LANG['CLOSE']}")
             
-            Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3", "4"], default="4")
-        basarili("Hələlik!")
+            Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3"], default="3")
+        basarili("Sonlandırıldı, Support: t.me/TheCyberSupport!")
