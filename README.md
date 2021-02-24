@@ -1,5 +1,5 @@
 # Cyber İnstaller
-[![Run on Repl.it](https://repl.it/badge/github/asenadev/installer)](https://repl.it/github/asenadev/installer)
+[![Run on Repl.it](https://repl.it/badge/github/FaridDadashzade/Installer)](https://repl.it/github/FaridDadashzade/Installer)
 
 HerokuAPI'si istifadə edilərək düzəldilmiş Avtomatik Cyber Deploy'er
 
@@ -9,7 +9,7 @@ Cyber Reposunu kontrol edin: https://github.com/FaridDadashzade/CyberUserBot
 git clone https://github.com/FaridDadashzade/Installer
 cd Installer
 pip install -r requirements.txt
-python3 -m cyber_installer
+python3 -m asena_installer
 ```
 
 ## Geliştiriciler
