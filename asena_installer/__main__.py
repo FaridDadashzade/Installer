@@ -3,7 +3,7 @@ from time import time
 import random
 import requests
 from git import Repo
-from cyber_installer import *
+from asena_installer import *
 from .astring import main
 import os
 from telethon import TelegramClient, functions
@@ -176,4 +176,4 @@ if __name__ == "__main__":
             bilgi(f"\[1] {LANG['BOTLOG']}\n\[2] {LANG['NO_SUP']}\n\[3] {LANG['NO_LOG']}\n\[4] {LANG['CLOSE']}")
             
             Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3", "4"], default="4")
-        basarili("Görüşürüz!")
+        basarili("Hələlik!")
