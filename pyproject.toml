@@ -1,9 +1,9 @@
 [tool]
 [tool.poetry]
-name = "AsenaUserBot_Deployer"
+name = "CyberUserBot_Deployer"
 version = "1.0"
-description = "Automatic Deploy AsenaUserBot to Heroku"
-authors = ["Yusuf Usta <yusuf@quiec.tech>"]
+description = "Automatic Deploy CyberUserBot to Heroku"
+authors = ["Lucifer <yusuf@quiec.tech>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 bs4 = "*"
