@@ -1,5 +1,5 @@
 {
-    "__ASENAJSON__": true,
+    "__CYBERJSON__": true,
     "LANGUAGE": "Türkçe",
     "LANGCODE": "TR",
     "AUTHOR": "Yusuf Usta",
@@ -13,8 +13,8 @@
             "SUCCESS_STRING": "(✓) StringSession alındı!",
             "CREATING_APP": "(i) Uygulama oluşturuluyor...",
             "SUCCESS_APP": "(✓) Uygulama oluşturma başarılı!",
-            "DOWNLOADING": "(i) AsenaUserBot indiriliyor...",
-            "DOWNLOADED": "(✓) AsenaUserBot indirmesi başarılı!",
+            "DOWNLOADING": "(i) CYBER indiriliyor...",
+            "DOWNLOADED": "(✓) CYBER indirmesi başarılı!",
             "DEPLOYING": "(i) Deploy işlemi başlatılıyor... (Bu İşlem Uzun Sürebilir)",
             "WRITING_CONFIG": "(i) Veriler yazılıyor...",
             "SET_LANG": "(✓) Bot artık {} dilinde!",
