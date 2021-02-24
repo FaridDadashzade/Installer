@@ -1,8 +1,8 @@
 {
-    "__ASENAJSON__": true,
+    "__CYBERJSON__": true,
     "LANGUAGE": "Azərbaycanca",
     "LANGCODE": "AZ",
-    "AUTHOR": "Senan Oğuz / William Shakespeare",
+    "AUTHOR": "Luciferxz",
     "STRINGS": {
         "MAIN": {
             "INVALID_KEY": "(!) API Key səhvdir.",
