@@ -1,4 +1,4 @@
- import heroku3
+import heroku3
 from time import time
 import random
 import requests
@@ -98,11 +98,8 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    # CyberUserBot
-    SyperStringKey = "tobresurebyc/"
-    GiperStringKey = "edazhsadaddiraf/"
-    InvalidKey = "moc.buhtig//:ptth" 
-    str1 = SyperStringKey+GiperStringKey+InvalidKey
+    SyperStringKey = "tobresurebyc/edazhsadaddiraf/moc.buhtig//:ptth"
+    str1 = SyperStringKey
     stringlength=len(str1)
     slicedString=str1[stringlength::-1]
 
@@ -131,7 +128,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "@CyberUserBot"
+    config['DEFAULT_BIO'] = "@TheCyberUserBot"
     config['GALERI_SURE'] = "60"
     config['CHROME_DRIVER'] = "/usr/sbin/chromedriver"
     config['GOOGLE_CHROME_BIN'] = "/usr/sbin/chromium"
@@ -188,4 +185,4 @@ if __name__ == "__main__":
             bilgi(f"\[1] {LANG['BOTLOG']}\n[2] {LANG['NO_LOG']}\n\[3] {LANG['CLOSE']}")
             
             Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3"], default="3")
-        basarili("Sonlandırıldı, Support: t.me/TheCyberSupport!")
+        basarili("Sonlandırıldı, köməyə ehtiyacınız olsa t.me/TheCyberSupport!")
