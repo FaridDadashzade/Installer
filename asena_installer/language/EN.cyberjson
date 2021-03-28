@@ -27,7 +27,7 @@
             "MOST_APP": "(!) I think you have more than five applications. You need to delete some of them in order to create a new application.",
             "ERROR": "An error has occurred! Error:",
             "POSTGRE": "(i) Installing PostgreSql...",
-            "SUCCESS_POSTGRE": "(✓) PostgreSql Installed!",
+            "SUCCESS_POSTGRE": "(✓) PostgreSQL Installed!",
             "AUTO_BOTLOG": "This group was automatically created with @TheCyberUserBot in the post-installation phase.",
             "DONT_LEAVE": "** PLEASE DON'T LEAVE THIS GROUP! **",
             "AFTER_INSTALL": "Do you want to start after installation?",
