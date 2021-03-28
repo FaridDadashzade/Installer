@@ -1,11 +1,10 @@
-# Cyber İnstaller
+# Cyber Installer
 
 HerokuAPI'si istifadə edilərək düzəldilmiş Avtomatik Cyber Deploy'er
 
 [![Run on Repl.it](https://repl.it/badge/github/fariddadashzade/installer)](https://repl.it/github/fariddadashzade/installer)
 
-Cyber Reposunu kontrol edin: https://github.com/FaridDadashzade/CyberUserBot
-## Kurulum
+## Qurulum
 ```sh
 git clone https://github.com/FaridDadashzade/Installer
 cd Installer
