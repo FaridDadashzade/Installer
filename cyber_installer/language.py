@@ -28,4 +28,4 @@ def importlang ():
     return COUNTRY, LANGUAGE, TZ
 
 COUNTRY, LANGUAGE, TZ = importlang()
-LANG = loads(open(f"./asena_installer/language/{LANGUAGE}.cyberjson", "r").read())["STRINGS"]
+LANG = loads(open(f"./cyber_installer/language/{LANGUAGE}.cyberjson", "r").read())["STRINGS"]
