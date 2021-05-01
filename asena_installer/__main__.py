@@ -97,15 +97,11 @@ if __name__ == "__main__":
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
-
-    SyperStringKey = "tobresurebyc/edazhsadaddiraf/moc.buhtig//:ptth"
-    str1 = SyperStringKey
-    stringlength=len(str1)
-    slicedString=str1[stringlength::-1]
+    
 
     if os.path.isdir("./cyberuserbot/"):
         rm_r("./cyberuserbot/")
-    repo = Repo.clone_from(slicedString,"./cyberuserbot/", branch="master")
+    repo = Repo.clone_from("https://github.com/fariddadashzade/cyberuserbot","./cyberuserbot/", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
