@@ -19,5 +19,5 @@ python3 -m cyber_installer
 
 ``` bash <(curl -L https://git.io/JYZdq) ```
 
-##Credits
+### Credits
 Thanks for AsenaUserBot
