@@ -54,7 +54,7 @@
             "2FA": "(i) İki addımlı yoxlama aşkar edilmişdir.",
             "PASS": "(?) Şifrənizi Yazın: ",
             "INVALID_2FA": "(!) Siz 2-addımlı Şifrənizi səhf yazdınız. Xahiş edirik yenidən cəhd edin. [Bir Neçə Dəfə Səhf Yazdıqdan Sonra Bloklana Bilərsiniz]",
-            "WHICH": "Stiring almaq üçün hansı üsul istifadə edilsin?",
+            "WHICH": "String almaq üçün hansı üsul istifadə edilsin?",
             "API_ID": "(?) API ID-niz [Hazır Açar Kodlarını istifadə etmək üçün boş buraxın]: ",
             "API_HASH": "?) API HASH-ınız: ",
             "USING_TG": "(i) Hazır Açar Kodları istifadə edilir...",
