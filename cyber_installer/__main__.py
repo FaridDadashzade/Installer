@@ -60,7 +60,7 @@ async def botlog (String, Api, Hash):
     await Client.start()
 
     KanalId = await Client(CreateChannelRequest(
-        title='C Y B Σ R UserBot BotLog',
+        title='CYBER UserBot BotLog',
         about=LANG['AUTO_BOTLOG'],
         megagroup=True
     ))
