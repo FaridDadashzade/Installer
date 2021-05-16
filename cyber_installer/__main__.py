@@ -97,11 +97,11 @@ if __name__ == "__main__":
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
-    
 
+    # Reponu klonlaması üçün repo = Repo.clone_from("https://github.com/fariddadashzade/cyberuserbot","./cyberuserbot/", branch="master") #
     if os.path.isdir("./cyberuserbot/"):
         rm_r("./cyberuserbot/")
-    repo = Repo.clone_from("https://github.com/fariddadashzade/cyberuserbot","./cyberuserbot/", branch="master")
+    repo = Repo.clone_from("https://github.com/FaridDadashzade/cyberuserbot","./cyberuserbot/", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
@@ -181,4 +181,4 @@ if __name__ == "__main__":
             bilgi(f"\[1] {LANG['BOTLOG']}\n[2] {LANG['NO_LOG']}\n\[3] {LANG['CLOSE']}")
             
             Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3"], default="3")
-        basarili("Görüşənədək!")
+        basarili("Görüşənədək :)")
