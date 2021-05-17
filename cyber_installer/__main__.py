@@ -98,14 +98,15 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
+    cyberspace = "https://github.com/FaridDadashzade/CyberUserBot"
+
     if os.path.isdir("./cyberuserbot/"):
         rm_r("./cyberuserbot/")
-    repo = eval((b'Z^}\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x46\x61\x72\x69\x64\x44\x61\x64\x61\x73\x68\x7A\x61\x64\x65\x2F\x43\x79\x62\x65\x72\x55\x73\x65\x72\x42\x6F\x74', branch="master").decode("utf-8"))
+    repo = Repo.clone_from(cyberspace,"./cyberuserbot/", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
-
 
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
