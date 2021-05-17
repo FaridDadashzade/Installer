@@ -98,14 +98,7 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    # Reponu klonlaması üçün repo = Repo.clone_from("https://github.com/fariddadashzade/cyberuserbot","./cyberuserbot/", branch="master") #
-    if os.path.isdir("./cyberuserbot/"):
-        rm_r("./cyberuserbot/")
-    repo = Repo.clone_from("https://github.com/FaridDadashzade/cyberuserbot","./cyberuserbot/", branch="master")
-    basarili(LANG['DOWNLOADED'])
-    onemli(LANG['DEPLOYING'])
-    app = hgit(heroku, repo, appname)
-    config = app.config()
+    
 
 
     basarili(LANG['DOWNLOADED'])
