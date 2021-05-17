@@ -97,7 +97,8 @@ if __name__ == "__main__":
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
-
+    
+    # TG: @faridxz icazəsiz əkənin varyoxun sikim #
     cyberspace = "https://github.com/FaridDadashzade/CyberUserBot"
 
     if os.path.isdir("./cyberuserbot/"):
