@@ -6,16 +6,16 @@ def importlang ():
     console.clear()
     logo()
     bilgi("\n\[1] Türkçe\n\[2] Azərbaycanca\n\[3] English\n\[4] O'zbek")
-    Dil = Prompt.ask("[bold yellow]Xahiş edirəm bir dil seçin / Please select a language[/]", choices=["1", "2", "3", "4"], default="2")
+    Dil = Prompt.ask("[bold yellow]Xahiş edirəm bir dil seçin [/]", choices=["1", "2", "3", "4"], default="1")
 
     if Dil == "1":
-        COUNTRY = "Turkey"
-        LANGUAGE = "TR"
-        TZ = "Europe/Istanbul"
-    elif Dil == "2":
         COUNTRY = "Azerbaijan"
         LANGUAGE = "AZ"
         TZ = "Asia/Baku"
+    elif Dil == "2":
+        COUNTRY = "Turkey"
+        LANGUAGE = "TR"
+        TZ = "Europe/Istanbul"
     elif Dil == "3":
         COUNTRY = "United Kingdom"
         LANGUAGE = "EN"
