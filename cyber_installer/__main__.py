@@ -159,7 +159,7 @@ if __name__ == "__main__":
 
     Sonra = Confirm.ask(f"[bold yellow]{LANG['AFTERDEPLOY']}[/]", default=True)
     if Sonra == True:
-        BotLog = True
+        BotLog = False
         Cevap = ""
         while not Cevap == "3":
             if Cevap == "1":
