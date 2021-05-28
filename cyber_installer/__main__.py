@@ -2,7 +2,6 @@ import heroku3
 from time import time
 import random
 import requests
-from . import console
 from git import Repo
 from cyber_installer import *
 from .astring import main
@@ -27,7 +26,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "cyberuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "cyber" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -99,7 +98,7 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
     
-    # Əkən peysərdi blə #
+    # Əkən peysərdi blet #
     cyberspace = "https://github.com/FaridDadashzade/CyberUserBot"
 
     if os.path.isdir("./cyberuserbot/"):
@@ -157,12 +156,6 @@ if __name__ == "__main__":
     basarili(LANG['OPENED_DYNO'])
     basarili(LANG['SUCCESS_DEPLOY'])
     tamamlandi(time() - baslangic)
-    KanalId = loop.run_until_complete(oturumacvebotlogolustur(stri, aid, ahash))
-
-    if KanalId != 'err':
-        basarili(LANG['OPENED_BOTLOG'])
-        config['BOTLOG'] = "True"
-        config['BOTLOG_CHATID'] = KanalId
 
     Sonra = Confirm.ask(f"[bold yellow]{LANG['AFTERDEPLOY']}[/]", default=True)
     if Sonra == True:
