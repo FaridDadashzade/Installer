@@ -1,7 +1,7 @@
 
 # Cyber Installer
 
-[![Run on Repl.it](https://repl.it/badge/github/FaridDadashzade/installer)](https://repl.it/github/FaridDadashzade/installer)
+[![Run on Repl.it](https://repl.it/badge/github/FaridDadashzade/testerr)](https://repl.it/github/FaridDadashzade/installer)
 
 ### Cyber Avtomatik Deployer
 
