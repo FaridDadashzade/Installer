@@ -3,7 +3,7 @@
 name = "CyberUserBot_Deployer"
 version = "1.0"
 description = "Automatic Deploy CyberUserBot to Heroku"
-authors = ["Lucifer <yusuf@quiec.tech>"]
+authors = ["Farid Dadashzade"]
 [tool.poetry.dependencies]
 python = "^3.8"
 bs4 = "*"
