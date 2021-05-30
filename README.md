@@ -1,7 +1,7 @@
 
 # Cyber Installer
 
-[![Run on Repl.it](https://repl.it/badge/github/FaridDadashzade/testerr)](https://repl.it/github/FaridDadashzade/installer)
+[![Run on Repl.it](https://repl.it/badge/github/FaridDadashzade/installer)](https://repl.it/github/FaridDadashzade/installer)
 
 ### Cyber Avtomatik Deployer
 
@@ -9,7 +9,7 @@
 
 ## Qurulum
 ```sh
-git clone https://github.com/FaridDadashzade/CyberUserBot 
+git clone https://github.com/FaridDadashzade/installer
 cd installer
 pip install -r requirements.txt
 python3 -m cyber_installer
