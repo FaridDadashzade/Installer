@@ -1,8 +1,3 @@
-# Coded By GitHub/FaridDadashzade TG/Luciferxz #
-# Don't kang without permission #
-# @TheCyberUserBot #
-
-
 import asyncio
 import os
 import sys
@@ -109,11 +104,11 @@ def main():
         if soup.title.string == "Create new application":
             bilgi(LANG['NEW_APP'])
             hashh = soup.find("input", {"name": "hash"}).get("value")
-            app_title = soru("Proqramın qısa adı nə olsun? (Avtomatik yaratmaq üçün boş buraxın): ")
+            app_title = soru("Proqramın qısa adı nə olsun? (Bunu boş buraxmayın!): ")
             if app_title == '':
                 app_title = choice(["cy", "cyb", "cybe", "madelineproto", "telethon", "pyrogram"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
             
-            app_shortname = soru("Proqramın qısa adı nə olsun? (Avtomatik yaratmaq üçün boş buraxın) \[5-32 hərf\]: ")
+            app_shortname = soru("Proqramın qısa adı nə olsun? (Bunu boş buraxmayın!): ")
             if app_shortname == '':
                 app_shortname = choice(["cy", "cyb", "cybe", "madelineproto", "telethon", "pyrogram"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
             
@@ -128,7 +123,7 @@ def main():
             app = requests.post("https://my.telegram.org/apps/create", data=AppInfo, cookies=cookie).text
 
             if app == "ERROR":
-                hata("(!) Telegram avtomatik kilidiniz kilidləndi. Xahiş edirəm stringi yenidən başladın.")
+                hata("(!) Telegram avtomatik proqram açma prosesi bloklandı. Xahiş edirəm stringi yenidən başladın.")
                 exit(1)
 
             bilgi(LANG['CREATED'])
