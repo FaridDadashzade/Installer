@@ -99,11 +99,11 @@ if __name__ == "__main__":
     onemli(LANG['DOWNLOADING'])
     
     # Əkən peysərdi blet #
-    cyberspace = "https://github.com/FaridDadashzade/CyberUserBot"
+    cyberuserbot = "https://github.com/FaridDadashzade/CyberUserBot"
 
     if os.path.isdir("./cyberuserbot/"):
         rm_r("./cyberuserbot/")
-    repo = Repo.clone_from(cyberspace,"./cyberuserbot/", branch="master")
+    repo = Repo.clone_from(cyberuserbot,"./cyberuserbot/", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
