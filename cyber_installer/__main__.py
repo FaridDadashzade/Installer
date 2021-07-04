@@ -121,7 +121,7 @@ if __name__ == "__main__":
     config['API_HASH'] = ahash
     config['API_KEY'] = str(aid)
     config['BOTLOG'] = "False"
-    config['ALIVE_LOGO'] = "https://telegra.ph/file/05ee7fb37bf56396e7cef.mp4"
+    config['ALIVE_LOGO'] = "https://telegra.ph/file/c3e75eccaeb7f56dfae89.mp4"
     config['BOTLOG_CHATID'] = "0"
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
