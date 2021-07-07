@@ -119,7 +119,7 @@ if __name__ == "__main__":
     config['ANTI_SPAMBOT'] = 'False'
     config['ANTI_SPAMBOT_SHOUT'] = 'False'
     config['API_HASH'] = ahash
-    config['ALIVE_NAME'] = ''
+    config['DEFAULT_NAME'] = 'Sahib'
     config['API_KEY'] = str(aid)
     config['BOTLOG'] = "False"
     config['ALIVE_LOGO'] = "https://telegra.ph/file/c3e75eccaeb7f56dfae89.mp4"
@@ -181,7 +181,7 @@ if __name__ == "__main__":
                     hata(LANG['NEED_BOTLOG'])
             elif Cevap == "3":
                 cyberad = str(soru(LANG['WHAT_IS_YOUR_NAME']))
-                config['ALIVE_NAME'] = cyberad
+                config['DEFAULT_NAME'] = cyberad
                 basarili(LANG['SUCCESS_DEFAULTNAME'])
 
          
