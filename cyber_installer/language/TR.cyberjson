@@ -40,6 +40,9 @@
             "NO_SUP": "Otomatik Supporta Katılmayı Kapat",
             "SUCCESS_SUP": "(✓) Artık kanal ve gruba otomatik katılmayacak.",
             "WHAT_YOU_WANT": "Ne yapmak istiyorsunuz?",
+            "NO_DEFAULTNAME": "C Y B Ξ R-ə adınızı deyin.",
+            "WHAT_IS_YOUR_NAME": "Adınız nədir?",
+            "SUCCESS_DEFAULTNAME": "(✓) Sizi tanıdığıma məmnun oldum!",
             "CLOSE": "Çık",
             "YES": "Evet",
             "NO": "Hayır"
