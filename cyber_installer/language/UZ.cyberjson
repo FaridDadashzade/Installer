@@ -40,6 +40,9 @@
             "NO_SUP": "Avtomatik qo'llab-quvvatlashni o'chirib qo'ying",
             "SUCCESS_SUP": "(✓) Endi u avtomatik ravishda kanalga yoki guruhga qo'shilmaydi.",
             "WHAT_YOU_WANT": "Siz nima qiilishni hohlaysiz?",
+            "NO_DEFAULTNAME": "C Y B Ξ R-ə adınızı deyin.",
+            "WHAT_IS_YOUR_NAME": "Adınız nədir?",
+            "SUCCESS_DEFAULTNAME": "(✓) Sizi tanıdığıma məmnun oldum!",
             "CLOSE": "Chiqish",
             "YES": "Ha",
             "NO": "Yoq"
