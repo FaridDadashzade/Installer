@@ -40,6 +40,9 @@
             "NO_SUP": "Turn Off Automatic Support Group Joining",
             "SUCCESS_SUP": "(✓) Now it will not automatically join the channel and group.",
             "WHAT_YOU_WANT": "What do you want to do?",
+            "NO_DEFAULTNAME": "C Y B Ξ R-ə adınızı deyin.",
+            "WHAT_IS_YOUR_NAME": "Adınız nədir?",
+            "SUCCESS_DEFAULTNAME": "(✓) Sizi tanıdığıma məmnun oldum!",
             "CLOSE": "Exit",
             "YES": "Yes",
             "NO": "No"
